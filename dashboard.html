@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - متجر R7 الإلكتروني</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">متجر R7</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html#home">الرئيسية</a></li>
+                <li><a href="index.html#about">عن المتجر</a></li>
+                <li><a href="index.html#team">طاقم الإدارة</a></li>
+                <li><a href="index.html#rules">القوانين</a></li>
+                <li><a href="index.html#store">المتجر</a></li>
+                <li><a href="https://discord.gg/wZQHQdvRsJ" target="_blank">دسكورد</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="user-dropdown">
+                <button class="user-btn">
+                    <span class="user-name">مرحباً، المستخدم</span>
+                    <span class="user-avatar">👤</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="dashboard.html" class="dropdown-item">لوحة التحكم</a>
+                    <a href="profile.html" class="dropdown-item">الملف الشخصي</a>
+                    <a href="orders.html" class="dropdown-item">طلباتي</a>
+                    <a href="index.html" class="dropdown-item logout">تسجيل الخروج</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboard-sidebar">
+                <div class="user-info">
+                    <div class="user-avatar-large">👤</div>
+                    <h3 class="user-name-large">المستخدم</h3>
+                    <p class="user-email">user@example.com</p>
+                </div>
+                <ul class="dashboard-menu">
+                    <li class="active"><a href="dashboard.html">لوحة التحكم</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                    <li><a href="orders.html">طلباتي</a></li>
+                    <li><a href="wishlist.html">المفضلة</a></li>
+                    <li><a href="index.html" class="logout-link">تسجيل الخروج</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-content">
+                <h1>لوحة التحكم</h1>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">🛒</div>
+                        <div class="stat-info">
+                            <h3>الطلبات</h3>
+                            <p class="stat-number">0</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-info">
+                            <h3>المشتريات</h3>
+                            <p class="stat-number">0 ريال</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">❤️</div>
+                        <div class="stat-info">
+                            <h3>المفضلة</h3>
+                            <p class="stat-number">0</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-orders">
+                    <h2>آخر الطلبات</h2>
+                    <div class="empty-state">
+                        <div class="empty-icon">📦</div>
+                        <p>لا توجد طلبات حتى الآن</p>
+                        <a href="index.html#store" class="shop-now-btn">تسوق الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">متجر R7</div>
+            <div class="footer-links">
+                <a href="index.html#home">الرئيسية</a>
+                <a href="index.html#about">عن المتجر</a>
+                <a href="index.html#team">طاقم الإدارة</a>
+                <a href="index.html#rules">القوانين</a>
+                <a href="index.html#store">المتجر</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">تويتر</a>
+                <a href="#" class="social-link">انستغرام</a>
+                <a href="https://discord.gg/wZQHQdvRsJ" class="social-link">ديسكورد</a>
+            </div>
+        </div>
+        <p>جميع الحقوق محفوظة &copy; 2023 متجر R7</p>
+    </footer>
+
+    <script>
+        // تفعيل القائمة المنسدلة للمستخدم
+        document.querySelector('.user-btn').addEventListener('click', function() {
+            document.querySelector('.dropdown-menu').classList.toggle('active');
+        });
+
+        // إغلاق القائمة المنسدلة عند النقر خارجها
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.user-dropdown')) {
+                document.querySelector('.dropdown-menu').classList.remove('active');
+            }
+        });
+
+        // تسجيل الخروج
+        document.querySelectorAll('.logout, .logout-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (confirm('هل أنت متأكد من تسجيل الخروج؟')) {
+                    window.location.href = 'index.html';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

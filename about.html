@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن المتجر - متجر R7 الإلكتروني</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">متجر R7</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html" class="active">عن المتجر</a></li>
+                <li><a href="team.html">طاقم الإدارة</a></li>
+                <li><a href="rules.html">القوانين</a></li>
+                <li><a href="store.html">المتجر</a></li>
+                <li><a href="shop-link.html">رابط المتجر</a></li>
+                <li><a href="https://discord.gg/wZQHQdvRsJ" target="_blank">دسكورد</a></li>
+                <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="cart-icon" id="cart-icon">
+                <span class="material-icons">shopping_cart</span>
+                <span class="cart-count">0</span>
+            </div>
+            <a href="login.html" class="login-link">تسجيل الدخول</a>
+        </div>
+
+        <!-- سلة التسوق -->
+        <div class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>سلة التسوق</h3>
+                <button class="close-cart" id="close-cart">×</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- ستتم إضافة العناصر هنا بواسطة JavaScript -->
+                <div class="empty-cart">
+                    <p>سلة التسوق فارغة</p>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>المجموع:</span>
+                    <span id="cart-total">0 ريال</span>
+                </div>
+                <a href="payment.html" class="checkout-btn" id="checkout-btn">إتمام الشراء</a>
+            </div>
+        </div>
+        <div class="cart-overlay" id="cart-overlay"></div>
+    </header>
+
+    <main>
+        <section class="about-page">
+            <h1>عن المتجر</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://cdn.discordapp.com/attachments/1368617391449440379/1368658393505468500/9bx.webp?ex=681905f5&is=6817b475&hm=4a6aabaa0656e08699e539bc3921def36ad706ccd6717b894a267664f7358fda&" alt="صورة المتجر">
+                </div>
+                <div class="about-text">
+                    <h2>قصتنا</h2>
+                    <p>متجر R7 هو وجهتك الأولى للخدمات الإلكترونية المتميزة. نقدم مجموعة متنوعة من الخدمات بأسعار منافسة وجودة عالية.</p>
+                    <p>تأسس المتجر في عام 2023 بهدف توفير خدمات موثوقة وآمنة لعملائنا الكرام. نحن نسعى دائماً لتطوير خدماتنا وتقديم أفضل تجربة للمستخدمين.</p>
+                    <p>نفتخر بفريق عملنا المحترف والمتخصص في مجال الخدمات الإلكترونية، ونضمن لكم تجربة تسوق سهلة وآمنة.</p>
+
+                    <h2>رؤيتنا</h2>
+                    <p>نسعى لأن نكون الخيار الأول والأفضل في مجال الخدمات الإلكترونية في العالم العربي، من خلال تقديم خدمات متميزة وذات جودة عالية.</p>
+
+                    <h2>مهمتنا</h2>
+                    <p>توفير خدمات إلكترونية متنوعة بأسعار منافسة وجودة عالية، مع ضمان تجربة تسوق سهلة وآمنة لعملائنا.</p>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">+1000</span>
+                    <span class="stat-text">عميل سعيد</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">+500</span>
+                    <span class="stat-text">طلب مكتمل</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-text">دعم فني</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-text">رضا العملاء</span>
+                </div>
+            </div>
+
+            <div class="about-features">
+                <h2>لماذا تختار متجر R7؟</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">verified</span>
+                        </div>
+                        <h3>جودة عالية</h3>
+                        <p>نقدم خدمات ذات جودة عالية ومضمونة 100%</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">price_check</span>
+                        </div>
+                        <h3>أسعار منافسة</h3>
+                        <p>أسعارنا منافسة ومناسبة لجميع العملاء</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">support_agent</span>
+                        </div>
+                        <h3>دعم فني 24/7</h3>
+                        <p>فريق دعم فني متاح على مدار الساعة لمساعدتك</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">security</span>
+                        </div>
+                        <h3>أمان وخصوصية</h3>
+                        <p>نضمن أمان وخصوصية بياناتك الشخصية</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>ابدأ التسوق الآن</h2>
+                <p>استمتع بتجربة تسوق فريدة مع متجر R7</p>
+                <a href="store.html" class="cta-btn">تصفح المتجر</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">متجر R7</div>
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">عن المتجر</a>
+                <a href="team.html">طاقم الإدارة</a>
+                <a href="rules.html">القوانين</a>
+                <a href="store.html">المتجر</a>
+                <a href="shop-link.html">رابط المتجر</a>
+                <a href="faq.html">الأسئلة الشائعة</a>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="privacy.html">سياسة الخصوصية</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">تويتر</a>
+                <a href="#" class="social-link">انستغرام</a>
+                <a href="https://discord.gg/wZQHQdvRsJ" class="social-link">ديسكورد</a>
+            </div>
+        </div>
+        <p>جميع الحقوق محفوظة &copy; 2023 متجر R7</p>
+    </footer>
+
+    <script>
+        // سلة التسوق
+        const cartIcon = document.getElementById('cart-icon');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartOverlay = document.getElementById('cart-overlay');
+        const closeCart = document.getElementById('close-cart');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        const cartCount = document.querySelector('.cart-count');
+        const checkoutBtn = document.getElementById('checkout-btn');
+
+        // مصفوفة لتخزين عناصر السلة
+        let cart = [];
+
+        // فتح سلة التسوق
+        cartIcon.addEventListener('click', () => {
+            cartSidebar.classList.add('active');
+            cartOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // إغلاق سلة التسوق
+        function closeCartSidebar() {
+            cartSidebar.classList.remove('active');
+            cartOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        closeCart.addEventListener('click', closeCartSidebar);
+        cartOverlay.addEventListener('click', closeCartSidebar);
+
+        // تحديث سلة التسوق
+        function updateCart() {
+            // تحديث عدد العناصر في السلة
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            cartCount.textContent = totalItems;
+
+            // تحديث إجمالي السعر
+            const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+            cartTotal.textContent = totalPrice + ' ريال';
+
+            // تحديث عناصر السلة
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="empty-cart"><p>سلة التسوق فارغة</p></div>';
+                checkoutBtn.style.display = 'none';
+            } else {
+                cartItems.innerHTML = '';
+                cart.forEach((item, index) => {
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+                    cartItem.innerHTML = `
+                        <div class="cart-item-image">
+                            <img src="${item.image}" alt="${item.name}">
+                        </div>
+                        <div class="cart-item-details">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-price">${item.price} ريال</div>
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn minus" data-index="${index}">-</button>
+                                <span>${item.quantity}</span>
+                                <button class="quantity-btn plus" data-index="${index}">+</button>
+                                <button class="cart-item-remove" data-index="${index}">×</button>
+                            </div>
+                        </div>
+                    `;
+                    cartItems.appendChild(cartItem);
+                });
+                checkoutBtn.style.display = 'block';
+
+                // إضافة مستمعي الأحداث لأزرار الكمية
+                document.querySelectorAll('.quantity-btn.minus').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const index = parseInt(button.getAttribute('data-index'));
+                        if (cart[index].quantity > 1) {
+                            cart[index].quantity--;
+                        } else {
+                            cart.splice(index, 1);
+                        }
+                        updateCart();
+                    });
+                });
+
+                document.querySelectorAll('.quantity-btn.plus').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const index = parseInt(button.getAttribute('data-index'));
+                        cart[index].quantity++;
+                        updateCart();
+                    });
+                });
+
+                document.querySelectorAll('.cart-item-remove').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const index = parseInt(button.getAttribute('data-index'));
+                        cart.splice(index, 1);
+                        updateCart();
+                    });
+                });
+            }
+
+            // تخزين السلة في localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // استرجاع السلة من localStorage عند تحميل الصفحة
+        window.addEventListener('load', () => {
+            const savedCart = localStorage.getItem('cart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCart();
+            }
+        });
+    </script>
+</body>
+</html>

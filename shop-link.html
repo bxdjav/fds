@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رابط المتجر - متجر R7 الإلكتروني</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .shop-link-page {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .shop-link-page h1 {
+            color: #bb86fc;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        
+        .shop-link-container {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .shop-link-container p {
+            color: #e0e0e0;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .shop-link-box {
+            background-color: #252525;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .shop-link {
+            color: #bb86fc;
+            font-size: 1.3rem;
+            font-weight: bold;
+            word-break: break-all;
+            display: block;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .shop-link:hover {
+            color: #03dac6;
+        }
+        
+        .copy-btn {
+            background-color: #bb86fc;
+            color: #121212;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            box-shadow: 0 5px 15px rgba(187, 134, 252, 0.3);
+        }
+        
+        .copy-btn:hover {
+            background-color: #03dac6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(3, 218, 198, 0.4);
+        }
+        
+        .copy-message {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #03dac6;
+            color: #121212;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .copy-message.show {
+            opacity: 1;
+        }
+        
+        .qr-code {
+            margin: 2rem auto;
+            max-width: 200px;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .qr-code img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .shop-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .shop-btn {
+            background-color: #bb86fc;
+            color: #121212;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(187, 134, 252, 0.3);
+        }
+        
+        .shop-btn:hover {
+            background-color: #03dac6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(3, 218, 198, 0.4);
+        }
+        
+        .shop-btn.discord {
+            background-color: #5865F2;
+            box-shadow: 0 5px 15px rgba(88, 101, 242, 0.3);
+        }
+        
+        .shop-btn.discord:hover {
+            background-color: #4752c4;
+            box-shadow: 0 8px 20px rgba(88, 101, 242, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .shop-link-box {
+                padding: 1.5rem;
+            }
+            
+            .shop-link {
+                font-size: 1rem;
+            }
+            
+            .shop-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">متجر R7</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عن المتجر</a></li>
+                <li><a href="team.html">طاقم الإدارة</a></li>
+                <li><a href="rules.html">القوانين</a></li>
+                <li><a href="store.html">المتجر</a></li>
+                <li><a href="shop-link.html" class="active">رابط المتجر</a></li>
+                <li><a href="https://discord.gg/wZQHQdvRsJ" target="_blank">دسكورد</a></li>
+                <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="cart-icon" id="cart-icon">
+                <span class="material-icons">shopping_cart</span>
+                <span class="cart-count">0</span>
+            </div>
+            <a href="login.html" class="login-link">تسجيل الدخول</a>
+        </div>
+        
+        <!-- سلة التسوق -->
+        <div class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>سلة التسوق</h3>
+                <button class="close-cart" id="close-cart">×</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- ستتم إضافة العناصر هنا بواسطة JavaScript -->
+                <div class="empty-cart">
+                    <p>سلة التسوق فارغة</p>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>المجموع:</span>
+                    <span id="cart-total">0 ريال</span>
+                </div>
+                <a href="payment.html" class="checkout-btn" id="checkout-btn">إتمام الشراء</a>
+            </div>
+        </div>
+        <div class="cart-overlay" id="cart-overlay"></div>
+    </header>
+
+    <main>
+        <section class="shop-link-page">
+            <h1>رابط المتجر</h1>
+            
+            <div class="shop-link-container">
+                <p>يمكنك الوصول إلى متجر R7 من خلال الرابط أدناه. شاركه مع أصدقائك للحصول على أفضل الخدمات الإلكترونية بأسعار منافسة!</p>
+                
+                <div class="shop-link-box">
+                    <div class="copy-message" id="copy-message">تم نسخ الرابط!</div>
+                    <a href="https://r7store.com" class="shop-link" id="shop-link">https://r7store.com</a>
+                    <button class="copy-btn" id="copy-btn">نسخ الرابط</button>
+                </div>
+                
+                <div class="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://r7store.com" alt="رمز QR للمتجر">
+                </div>
+                
+                <p>يمكنك أيضًا مسح رمز QR أعلاه للوصول إلى المتجر مباشرة من هاتفك.</p>
+                
+                <div class="shop-buttons">
+                    <a href="store.html" class="shop-btn">تصفح المتجر</a>
+                    <a href="https://discord.gg/wZQHQdvRsJ" target="_blank" class="shop-btn discord">انضم إلى الديسكورد</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">متجر R7</div>
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">عن المتجر</a>
+                <a href="team.html">طاقم الإدارة</a>
+                <a href="rules.html">القوانين</a>
+                <a href="store.html">المتجر</a>
+                <a href="shop-link.html">رابط المتجر</a>
+                <a href="faq.html">الأسئلة الشائعة</a>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="privacy.html">سياسة الخصوصية</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">تويتر</a>
+                <a href="#" class="social-link">انستغرام</a>
+                <a href="https://discord.gg/wZQHQdvRsJ" class="social-link">ديسكورد</a>
+            </div>
+        </div>
+        <p>جميع الحقوق محفوظة &copy; 2023 متجر R7</p>
+    </footer>
+
+    <script>
+        // سلة التسوق
+        const cartIcon = document.getElementById('cart-icon');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartOverlay = document.getElementById('cart-overlay');
+        const closeCart = document.getElementById('close-cart');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        const cartCount = document.querySelector('.cart-count');
+        const checkoutBtn = document.getElementById('checkout-btn');
+
+        // مصفوفة لتخزين عناصر السلة
+        let cart = [];
+
+        // فتح سلة التسوق
+        cartIcon.addEventListener('click', () => {
+            cartSidebar.classList.add('active');
+            cartOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // إغلاق سلة التسوق
+        function closeCartSidebar() {
+            cartSidebar.classList.remove('active');
+            cartOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        closeCart.addEventListener('click', closeCartSidebar);
+        cartOverlay.addEventListener('click', closeCartSidebar);
+
+        // تحديث سلة التسوق
+        function updateCart() {
+            // تحديث عدد العناصر في السلة
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            
+            // تحديث إجمالي السعر
+            const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+            cartTotal.textContent = totalPrice + ' ريال';
+            
+            // تحديث عناصر السلة
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="empty-cart"><p>سلة التسوق فارغة</p></div>';
+                checkoutBtn.style.display = 'none';
+            } else {
+                cartItems.innerHTML = '';
+                cart.forEach((item, index) => {
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+                    cartItem.innerHTML = `
+                        <div class="cart-item-image">
+                            <img src="${item.image}" alt="${item.name}">
+                        </div>
+                        <div class="cart-item-details">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-price">${item.price} ريال</div>
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn minus" data-index="${index}">-</button>
+                                <span>${item.quantity}</span>
+                                <button class="quantity-btn plus" data-index="${index}">+</button>
+                                <button class="cart-item-remove" data-index="${index}">×</button>
+                            </div>
+                        </div>
+                    `;
+                    cartItems.appendChild(cartItem);
+                });
+                checkoutBtn.style.display = 'block';
+                
+                // إضافة مستمعي الأحداث لأزرار الكمية
+                document.querySelectorAll('.quantity-btn.minus').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const index = parseInt(button.getAttribute('data-index'));
+                        if (cart[index].quantity > 1) {
+                            cart[index].quantity--;
+                        } else {
+                            cart.splice(index, 1);
+                        }
+                        updateCart();
+                    });
+                });
+                
+                document.querySelectorAll('.quantity-btn.plus').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const index = parseInt(button.getAttribute('data-index'));
+                        cart[index].quantity++;
+                        updateCart();
+                    });
+                });
+                
+                document.querySelectorAll('.cart-item-remove').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const index = parseInt(button.getAttribute('data-index'));
+                        cart.splice(index, 1);
+                        updateCart();
+                    });
+                });
+            }
+            
+            // تخزين السلة في localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // استرجاع السلة من localStorage عند تحميل الصفحة
+        window.addEventListener('load', () => {
+            const savedCart = localStorage.getItem('cart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCart();
+            }
+        });
+
+        // نسخ رابط المتجر
+        const copyBtn = document.getElementById('copy-btn');
+        const shopLink = document.getElementById('shop-link');
+        const copyMessage = document.getElementById('copy-message');
+
+        copyBtn.addEventListener('click', () => {
+            // إنشاء عنصر نصي مؤقت
+            const tempInput = document.createElement('input');
+            tempInput.value = shopLink.textContent;
+            document.body.appendChild(tempInput);
+            
+            // تحديد النص
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+            
+            // نسخ النص
+            document.execCommand('copy');
+            
+            // إزالة العنصر المؤقت
+            document.body.removeChild(tempInput);
+            
+            // إظهار رسالة النسخ
+            copyMessage.classList.add('show');
+            setTimeout(() => {
+                copyMessage.classList.remove('show');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
